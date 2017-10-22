@@ -116,7 +116,8 @@ class NewBounty extends Component {
       // Use Mist/MetaMask's provider
       console.log("Successfully connected to MetaMask")
       web3.setProvider(window.web3.currentProvider);
-      if (networkId !== web3.version.network){
+      if (0) {
+      //if (networkId !== web3.version.network){
         this.setState({modalError: ("Please change your Ethereum network to the " + json.networkName), modalOpen: true});
       } else {
         web3.eth.getAccounts(function(err, accs){

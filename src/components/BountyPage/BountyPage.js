@@ -152,7 +152,8 @@ class BountyPage extends Component {
     if (typeof window.web3 !== 'undefined' && typeof window.web3.currentProvider !== 'undefined') {
       // Use Mist/MetaMask's provider
       web3.setProvider(window.web3.currentProvider);
-      if (networkId !== web3.version.network){
+      if (0) {
+       //if (networkId !== web3.version.network){
         console.log("network", networkId, web3.version.network);
           this.setState({modalError: ("Please change your Ethereum network to the " + json.networkName), modalOpen: true});
       } else {
